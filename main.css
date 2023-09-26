@@ -1,0 +1,194 @@
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+p {
+  font-size: 18px;
+}
+
+/* @media (max-width: 767px) {
+  .card {
+    width: 300px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card img {
+    max-width: 100%;
+  }
+  .card h3 {
+    color: hsl(0, 0%, 100%);
+    font-size: 23px;
+  }
+  .card p {
+    color: hsl(215, 51%, 70%);
+
+    line-height: 1.6;
+  }
+
+  .card .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 25px;
+    margin-top: 20px;
+  }
+
+  .card .info span:first-child {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: hsl(178, 100%, 50%, 90%);
+  }
+  .card .info span:first-child img {
+    width: 12px;
+    margin-right: 10px;
+  }
+
+  .card .info span:last-child {
+    color: hsl(215, 51%, 70%);
+    font-size: 17px;
+    display: flex;
+  }
+
+  .card .info span:last-child img {
+    width: 20px;
+    margin-right: 8px;
+  }
+
+  .card .footer {
+    display: flex;
+    align-items: center;
+  }
+  .card .footer img {
+    border: 1px solid white;
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  .card .footer span {
+    color: hsl(215, 51%, 70%);
+    font-size: 17px;
+  }
+
+  .card .footer span > span {
+    color: hsl(0deg 0% 100% / 80%);
+    font-size: 20px;
+  }
+} */
+
+.card {
+  width: 300px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card img {
+  max-width: 100%;
+}
+.card h3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 23px;
+  width: fit-content;
+}
+.card p {
+  color: hsl(215, 51%, 70%);
+
+  line-height: 1.6;
+}
+
+.card .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 25px;
+  margin-top: 20px;
+}
+
+.card .info span:first-child {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: hsl(178, 100%, 50%, 90%);
+}
+.card .info span:first-child img {
+  width: 12px;
+  margin-right: 10px;
+}
+
+.card .info span:last-child {
+  color: hsl(215, 51%, 70%);
+  font-size: 17px;
+  display: flex;
+}
+
+.card .info span:last-child img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.card .footer {
+  display: flex;
+  align-items: center;
+}
+.card .footer img {
+  border: 1px solid white;
+  width: 32px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.card .footer span {
+  color: hsl(215, 51%, 70%);
+  font-size: 17px;
+}
+
+.card .footer span > span {
+  color: hsl(0deg 0% 100% / 80%);
+  font-size: 20px;
+}
+
+.card .Overlay {
+  position: absolute;
+  width: 0;
+  height: 300px;
+  background-color: hsl(178, 100%, 50%);
+  top: 20px;
+  left: 20px;
+  opacity: 0.5;
+}
+
+.card .hovere:hover .Overlay {
+  width: 300px;
+}
+
+.card .view {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  display: none;
+  transform: translate(-50%, -50%);
+}
+.card .hovere:hover .view {
+  display: block;
+}
+
+.card h3:hover {
+  color: hsl(178, 100%, 50%);
+}
+.card .footer span > span:hover {
+  color: hsl(178, 100%, 50%);
+}
